@@ -1,0 +1,1 @@
+body{*zoom:1;max-width:860px;margin-left:auto;margin-right:auto;background:red}body:after,body:before{content:'';display:table}body:after{clear:both}div{width:calc(99.99% * 1/2 - 15px)}div:nth-child(n){float:left;margin-right:30px;clear:none}div:last-child,div:nth-child(2n){margin-right:0}div:nth-child(2n+1){clear:left}

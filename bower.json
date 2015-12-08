@@ -1,0 +1,22 @@
+{
+  "name": "deepfried",
+  "description": "Boilerplate for C3K projects",
+  "main": "index.js",
+  "authors": [
+    "Guy Lyons <guylyons2@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "http://www.chicken3000.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "typographic": "~2.9.3",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
