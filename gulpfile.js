@@ -4,7 +4,8 @@ var gulp = require('gulp'),
     nano = require('gulp-cssnano'),
     postcss = require('gulp-postcss'),
     browserSync = require('browser-sync'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    babel = require('gulp-babel');
 
 // Sass
 gulp.task('sass', function () {
@@ -20,13 +21,22 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./app/assets/css'));
 });
 
-gulp.task('sass:watch', function () {
-  gulp.watch('app/assets/sass/**/*.scss', ['sass']);
+// Babel.js
+gulp.task('babel', () => {
+    return gulp.src('app/assets/src/app.js')
+        .pipe(babel({
+            presets: ['es2015']
+        }))
+        .pipe(gulp.dest('app/assets/js'));
 });
 
+gulp.task('watch', function () {
+  gulp.watch('app/assets/sass/**/*.scss', ['sass']),
+  gulp.watch('app/assets/src/**/*.js', ['babel']);
+});
 
 // BrowserSync
-gulp.task('serve', ['browser-sync', 'sass:watch']);
+gulp.task('serve', ['browser-sync', 'watch']);
 
 gulp.task('browser-sync', function () {
    var files = [

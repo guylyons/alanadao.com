@@ -1,1 +1,3 @@
-console.log("Test");
+"use strict";
+
+document.write("H");
