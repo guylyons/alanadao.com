@@ -1,3 +1,2 @@
-"use strict";
-
-document.write("H");
+// Deep Fried
+var deepFriedApp = deepFriedApp || {};
