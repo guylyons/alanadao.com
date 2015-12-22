@@ -2,3 +2,22 @@
 @import '../components/typographic/scss/typographic';
 $min-font: 14px
 typographic()
+
+/* clearfix hack */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
