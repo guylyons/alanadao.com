@@ -1,2 +1,1 @@
-// Deep Fried
-var deepFriedApp = deepFriedApp || {};
+console.log("Hello World!");
