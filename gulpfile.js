@@ -1,3 +1,4 @@
+// Packages
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     lost = require('lost'),
@@ -49,7 +50,8 @@ gulp.task('browser-sync', function () {
    browserSync.init(files, {
       server: {
          baseDir: './app'
-      }
+      },
+      notify: false
    });
 });
 

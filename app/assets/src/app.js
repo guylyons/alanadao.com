@@ -1,1 +1,3 @@
-document.write("H");
+(function() {
+	console.log("I'm loaded!");
+})();
