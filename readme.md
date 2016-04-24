@@ -1,5 +1,5 @@
 # DeepFried
-A modern boilerplate for scaffolding your designs
+A simple, stripped down web scaffolding template.
 
 # About
 Some of my favorite and most frequently used packages are included. I find these useful; maybe you will, too. 
@@ -10,7 +10,7 @@ To get started:
     npm install && bower install
     gulp serve
   
-After packages have installed, use the Grunt CLI to watch for changes.
+After packages have installed, use the Gulp to watch for changes.
 
 # Gulp CLI
 Watch for changes
@@ -21,4 +21,4 @@ Watch for changes
 - Gulp
 - Sass & Babel
 - PostCSS: Autoprefixer, Lost Grid
-- Typographic, Evil Icons, BrowserSync
+- Evil Icons, BrowserSync
