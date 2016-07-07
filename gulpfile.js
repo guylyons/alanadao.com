@@ -11,13 +11,13 @@ var gulp = require('gulp'),
 // Sass
 gulp.task('sass', function () {
   return gulp.src('app/assets/sass/**/*.scss')
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-      cascade: false}))
     .pipe(postcss([
       lost()
     ]))
     .pipe(sass.sync().on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false}))
     .pipe(nano())
     .pipe(gulp.dest('./app/assets/css'));
 });
