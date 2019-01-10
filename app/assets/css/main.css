@@ -1,10 +1,11 @@
-@import url(../components/normalize-css/normalize.css);
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-family: Helvetica Neue, Helvetica, Arial, "sans-serif";
+    background: #eee;
     color: #fff;
+    font-size: 1em;
     background-image: url(../img/bg.jpg);
-    background-size: cover;
-    background-position: 50% 50%
+    background-position: 50% 50%;
+    background-size: 45%;
 }
 
 body:before {
@@ -20,14 +21,15 @@ body:before {
 }
 
 .rounded {
-    border-radius: 50%
+    border-radius: 50%;
 }
 
 a {
-    color: #68e89e
+    color: #68e89e;
 }
 
 .main-content {
+    padding-top: 2em;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -36,26 +38,24 @@ a {
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
-    height: 100vh;
-    text-align: center
 }
 
 .main-content img {
-    width: 120px;
-    height: 120px
+    width: 150px;
+    height: 150px;
 }
 
 .main-content__site-title {
     font-size: 4em;
     margin-bottom: 0;
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 .main-content__site-title,
 h2,
 p {
     background: #68e89e;
-    padding: 10px
+    padding: 10px;
 }
 
 .main-content__list {
@@ -63,5 +63,11 @@ p {
     list-style: none;
     padding: 0;
     background: #fff;
-    padding: 3em
+    padding: 1em 2em;
+    max-width: 300px;
+    width: 100%;
+}
+
+.main-content__list li {
+    margin-bottom: 15px;
 }
