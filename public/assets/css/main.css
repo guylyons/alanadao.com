@@ -20,6 +20,11 @@ body:before {
     z-index: -1
 }
 
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
 .rounded {
     border-radius: 50%;
 }
@@ -38,6 +43,7 @@ a {
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
+    text-align: center;
 }
 
 .main-content img {
@@ -64,7 +70,6 @@ p {
     padding: 0;
     background: #fff;
     padding: 1em 2em;
-    max-width: 300px;
     width: 100%;
 }
 
